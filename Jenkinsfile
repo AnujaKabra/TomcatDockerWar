@@ -28,7 +28,7 @@ stage("Docker build") {
 stage("Deploy to staging") {
      steps {
  
-          sh '''docker run --rm -e SITE_URL=www.google.com -v $(pwd)/vol:/data/:rw test-curl'''
+          sh '''docker run --rm -e SITE_URL=www.google.com -v $(pwd)/vol:/data/:rw deepak_tomcat'''
      }
 }
 
